@@ -1,0 +1,209 @@
+@import "./variables.css";
+
+/* Text Colors */
+
+.primary-color {
+  color: var(--primary-color);
+}
+.white-color {
+  color: var(--white-color);
+}
+.gray-color {
+  color: var(--gray-color);
+}
+.black-color {
+  color: var(--black-color);
+}
+
+/* End of Text Colors */
+/* Buttons */
+.btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 3px solid var(--white-color);
+  padding: 0.65rem 3.5rem;
+  transition: all 0.4s;
+  background-color: transparent;
+}
+
+.btn-none {
+  padding: 0;
+  color: var(--black-color);
+}
+
+.btn-outline-black {
+  border: 3px solid var(--black-color);
+}
+.btn-outline-black:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.btn-outline:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.btn-outline:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+/* End of Buttons */
+
+/* Flex column */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.flex-col-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.space-b {
+  justify-content: space-between;
+}
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End of Flex column */
+
+/* Text Center */
+
+/* Text Center */
+
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End of Flex */
+section {
+  max-width: 1900px;
+}
+/* Grid  */
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.grid-4-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 5rem;
+}
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 5rem;
+}
+.grid-2-col-r {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+.grid-rows {
+  grid-template-rows: auto 1fr;
+}
+/* End of Grid  */
+
+/* Container */
+.container {
+  height: 100%;
+  padding: 0 8rem;
+}
+/*End of Container */
+
+/* Icon */
+.icon {
+  font-size: 2.5rem;
+  margin-right: 2px;
+}
+
+/* End of Icon */
+/* Padding */
+
+/* Padding Top+Bottom */
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+/* Padding Right+Left */
+.pys-1 {
+  padding: 0 1rem;
+}
+.pys-2 {
+  padding: 0 2rem;
+}
+.pys-3 {
+  padding: 0 3rem;
+}
+.pys-4 {
+  padding: 0 4rem;
+}
+.pys-17 {
+  padding-left: 17.5rem;
+  padding-right: 17.5rem;
+}
+.pys-30 {
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
+
+/* Padding Top+Bottom+Right+Left */
+.pya-1 {
+  padding: 1rem;
+}
+.pya-2 {
+  padding: 2rem;
+}
+.pya-3 {
+  padding: 3rem;
+}
+.pya-4 {
+  padding: 4rem;
+}
+/*End of  Padding */
+
+/* Margin */
+
+/* Margin Top+Bottm */
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+/* Margin Left+Right */
+.mys-1 {
+  margin: 0 1rem;
+}
+.mys-2 {
+  margin: 0 2rem;
+}
+
+/* End of Margin */

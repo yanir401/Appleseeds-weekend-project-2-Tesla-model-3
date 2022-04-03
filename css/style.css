@@ -1,0 +1,222 @@
+@import "./variables.css";
+
+/* Resets */
+@font-face {
+  font-family: "gothamSSm";
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2)
+    format("woff2");
+  font-weight: "light";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gothamSSm";
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+h3 {
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* End Of Resets */
+
+/* General */
+
+header {
+  color: var(--white-color);
+}
+.hero {
+  background: url("../images/model-3-main-hero-a-desktop.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+}
+
+/* Navbar */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  max-width: 1800px;
+}
+header nav h1 {
+  padding: 0 16px 0 48px;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav h1 svg {
+  width: 120px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 8px;
+  height: 100%;
+}
+header nav ul:last-child {
+  padding: 0 32px 0 0;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+header nav ul li {
+  margin: 0 8px;
+  transition: all 0.4s;
+}
+header nav ul li:hover {
+  background-color: #999999;
+  border-radius: 20px;
+}
+header nav ul li a {
+  font-size: 13px;
+  padding: 4px 8px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/* End of Navbar */
+
+/* Hero content */
+
+.hero-content {
+  height: 100%;
+}
+.hero-content h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero-content h3 {
+  font-size: 28px;
+}
+.hero-content .box-item p {
+  font-size: 12px;
+}
+
+.hero-content .details-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 65%;
+  padding-bottom: 4.5rem;
+}
+.box-item a {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.box-item .speed-svg {
+  position: relative;
+  width: 40px;
+  height: 25px;
+}
+.speed-svg .svg-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.speed-svg .svg-second {
+  position: relative;
+  opacity: 0.4;
+  top: 5px;
+  left: 5px;
+}
+.speed-svg .svg-third {
+  position: absolute;
+  left: 19px;
+  top: 12px;
+  animation: rotation 1s ease-out 0.5s forwards;
+  transform: rotate(-90deg);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(91deg);
+    left: 24px;
+  }
+}
+
+.arrow-down {
+  animation: arrow-down 2s ease-out 0.5s infinite;
+}
+
+@keyframes arrow-down {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
+
+/* End of Hero content */
+
+/* Section Safety */
+
+#safety aside .wrap-content p {
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+#safety aside .wrap-content a {
+  color: var(--gray-color);
+  text-decoration: underline;
+}
+/* End of Section Safety */
+
+/* Section Perfomance */
+#performance {
+  background: url("../images/lhd-performance-hero-desktop.jpg") no-repeat center
+    center/cover;
+  color: var(--white-color);
+  height: 90vh;
+}
+
+#performance .details-box {
+  align-items: flex-end;
+  height: 100%;
+}
+#performance p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* End of Perfomance */
+
+.flex-col {
+  text-align: left;
+  align-items: flex-start;
+}
+.mr-4 {
+  margin-right: 5px;
+}
+#performance .speed-svg .svg-second {
+  left: 0px;
+}
+/* End Of General */
